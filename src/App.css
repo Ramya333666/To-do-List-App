@@ -1,3 +1,130 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"Poppins", sans-serif;
+}
+
+body
+{
+  background-image:url('https://images.unsplash.com/photo-1496947853650-d43a39dafb40?ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input
+{
+  border: 2px solid #ff9f9f; 
+  border-radius: 12px;
+  padding: 10px 15px; 
+  font-size: 16px;
+  color: #333; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+.input:focus {
+  border-color: #ff6f61; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  outline: none; 
+}
+
+.input::placeholder {
+  color: #999; 
+  font-style: italic; 
+}
+.heart-checkbox input {
+  display: none;
+}
+
+
+.heart-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #ff6f61;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.heart-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  transition: background-color 0.3s ease;
+}
+
+.heart-checkbox .checkmark::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  transition: background-color 0.3s ease;
+}
+
+
+.heart-checkbox input:checked ~ .checkmark {
+  background-color: #ff6f61;
+}
+
+.heart-checkbox input:checked ~ .checkmark::after,
+.heart-checkbox input:checked ~ .checkmark::before {
+  background-color: #ff6f61;
+}
+.container {
+  height: 31.25em;
+  width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: 3px dotted #FFB6C1;
+  border-radius: 20px;
+  padding: 15px;
+}
+.footer
+{
+font-size: 20px;
+color: #FFB6C1;
+text-shadow: 1px 1px 0 #ede2e2, 2px 2px 0 #333, 3px 3px 0 #333;
+}
+.button {
+  background-color: #FFD1DC;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive;
+  font-weight: bold;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
